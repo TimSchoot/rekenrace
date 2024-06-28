@@ -1,0 +1,223 @@
+.color-1{background-color: #074B47;}
+.color-2{background-color: #0B7A75;}
+.color-3{background-color: #8EEDF7;}
+.color-4{background-color: #A1CDF1;}
+.color-5{background-color: #7673AB;}
+
+
+/*CARDS*/
+
+body{
+    display: flex;
+    background-color: #074B47;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.rekenmachine-links{
+    display: flex;
+    background-color: #0B7A75;
+    width: 15vw;
+    height: 60vh;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    border-radius: 15px;
+}
+
+.game-card{
+    display: flex;
+    background-color: #0B7A75;
+    height: 75vh;
+    width: 50vw;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    border-radius: 15px;
+}
+
+.rekenmachine-rechts{
+    display: flex;
+    background-color: #0B7A75;
+    width: 15vw;
+    height: 60vh;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    border-radius: 15px;
+}
+
+
+
+/*REKENMACHINE*/
+
+.calculator {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.buttons button {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #8EEDF7;
+    border: none;
+    border-radius: 10px;
+}
+#result{
+    height: 10vh;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: -0.2vw;
+}
+#result2{
+    height: 10vh;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: -0.2vw;
+}
+
+/*REKENSOM*/
+.reken-som{
+    margin-left: 14vw;
+    margin-top: 5vh;
+}
+.reken-som-input{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 30px;
+    width: 20vw;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.reken-som-player2{
+    position: absolute;
+    margin-left: 14vw;
+    margin-top: 60vh;
+}
+.reken-som-input-player2{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 30px;
+    width: 20vw;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+/*progress bar*/
+.progress-bar {
+    position: absolute;
+    width: 40vw;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid black 2px;
+}
+
+.progress-bar-fill {
+    height: 30px;
+    background-color: #76c7c0;
+    width: 0;
+    border-radius: 25px;
+    transition: width 0.5s ease-in-out;
+}
+.progress-bar-player2 {
+    position: absolute;
+    width: 40vw;
+    margin-top: 50vh;
+    margin-left: 5vw;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid black 2px;
+    rotate: 180deg;
+}
+
+.progress-bar-fill-player2 {
+    height: 30px;
+    background-color: #76c7c0;
+    width: 0;
+    border-radius: 25px;
+    transition: width 0.5s ease-in-out;
+}
+
+
+/*pop-up als speler heeft gewonnen*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: pop-in 0.5s ease;
+}
+
+.modal-content h2 {
+    color: #4CAF50;
+}
+
+.modal-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes pop-in {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.button-play-again{
+    width: 120px;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #8EEDF7;
+    border: none;
+    border-radius: 10px;
+}
